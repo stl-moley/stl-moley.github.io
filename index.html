@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évaluation: location de voitures.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="/Assets/js/jQuery-3.5.1.min.js"></script>
+    <script src="/Assets/js/main.js"></script>
+</head>
+
+<body>
+
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h5 class="text-black h4">Menu</h5>
+            <span class="text-muted">
+                <ul>
+                    <li>Louer une voiture</li>
+                    <li>Louer un utilitaire</li>
+                    <li>Réserver un chauffeur</li>
+                    <li>Découvrez nos agences</li>
+                    <li>Mon Compte</li>
+                    <li>Contact</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-transparent">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+
+
+    <header>
+        <div class="superpositionHeader">
+
+            <h1>Bienvenue à bord</h1>
+            <h2>Location de voiture 24h/24 et 7j/7</h2>
+
+        </div>
+
+
+        <div id="slider">
+            <ul class="slides">
+                <li class="slide"><img src="/Assets/img/background.jpg" alt="Image voiture de luxe"></li>
+                <li class="slide"><img  src="/Assets/img/background.jpg" alt="Belle voiture"></li>
+                <li class="slide"><img  src="/Assets/img/background.jpg" alt="Autre belle voiture"></li>
+                <li class="slide"><img  src="/Assets/img/background.jpg" alt="Belle voiture"></li>
+                <li class="slide"><img  src="/Assets/img/background.jpg" alt="Belle voiture"></li>
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <div class="barreRecherche d-flex justify-content-center ">
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Addresse de départ
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Bordeaux</a></li>
+                <li><a class="dropdown-item" href="#">Strasbourg</a></li>
+                <li><a class="dropdown-item" href="#">Lille</a></li>
+            </ul>
+        </div>
+
+        <div class="location">
+            <p>Début de location</p>
+            <i class="far fa-calendar-alt"></i>
+
+        </div>
+
+        <div class="location">
+            <p>Fin de location</p>
+            <i class="far fa-calendar-alt"></i>
+
+        </div>
+
+
+        <button type="button" class="btn btn-success">Valider mon choix</button>
+
+    </div>
+
+    <div class="container">
+
+
+        <div class="barreResulats d-flex justify-content-center">
+
+            <div class="resultats">
+                <p>7 résultats</p>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Prix croissant
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <section class="allCars">
+
+            <article class="car">
+                <div id="miniSlider1">
+                <img src="/Assets/img/vehicule1.png" alt="">
+                <img src="/Assets/img/vehicule1.png" alt="">
+                <img src="/Assets/img/vehicule1.png" alt="">
+                </div>
+
+                <div class="boxText">
+                    <h3>Peugeot 208</h3>
+                    <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000 km (0.5/km supplémentaire).</p>
+                    <p>999€ - Agence de Paris</p>
+                    <button type="button" class="btn btn-success">Réserver et payer</button>
+
+                </div>
+
+            </article>
+
+            <hr>
+
+            <article class="car">
+                <div id="miniSlider2">
+                    <img src="/Assets/img/vehicule2.png" alt="">
+                    <!-- <img src="/Assets/img/vehicule2.png" alt="">
+                <img src="/Assets/img/vehicule2.png" alt="">  -->
+                </div>
+                <div class="boxText">
+                    <h3>Ford Focus</h3>
+                    <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000 km (0.5/km supplémentaire).</p>
+                    <p>999 €</p>
+                    <button type="button" class="btn btn-success">Réserver et payer</button>
+                </div>
+            </article>
+
+            <hr>
+
+            <article class="car">
+
+                <div id="miniSlider3">
+                    <img src="/Assets/img/vehicule3.png" alt="">
+                    <!-- <img src="/Assets/img/vehicule3.png" alt="">
+                <img src="/Assets/img/vehicule3.png" alt=""> -->
+                </div>
+                <div class="boxText">
+                    <h3>Audi A1</h3>
+                    <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000 km (0.5/km supplémentaire).</p>
+                    <p>11000 € - Agence de Paris</p>
+                    <button type="button" class="btn btn-success">Réserver et payer</button>
+                </div>
+            </article>
+
+            <hr>
+
+            <article class="car">
+                <div id="miniSlider4">
+                    <img src="/Assets/img/vehicule4.png" alt="">
+                    <!--  <img src="/Assets/img/vehicule4.png" alt="">
+                <img src="/Assets/img/vehicule4.png" alt=""> -->
+                </div>
+                <div class="boxText">
+                    <h3>Opel Mokka</h3>
+                    <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000 km (0.5/km supplémentaire).</p>
+                    <p>1150 € - Agence de Paris</p>
+                    <button type="button" class="btn btn-success">Réserver et payer</button>
+                </div>
+            </article>
+
+            <hr>
+
+
+
+
+        </section>
+
+
+        <footer>
+
+            <div class="imgFooter">
+                <img src="/Assets/img/agence.jpg" alt="">
+
+            </div>
+
+            <div class="textFooter">
+                <h4>Notre Agence de <span>Paris</span></h4>
+                <p>300 boulevard de vaugirard, 75015, Paris</p>
+                <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+                <p>01 49 78 21 33</p>
+                <p>contact@vtc.com</p>
+
+            </div>
+
+
+
+
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>
