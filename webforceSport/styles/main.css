@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* background */
+
+.bcg {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/01-enonce/images/ui/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.logo-menu {
+    margin: 0 auto;
+    width: 80vw;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 6vw;
+    padding: 10px;
+    height: auto;
+}
+
+.menu {
+    width: 60%;
+    padding: 20px;
+
+}
+
+.ul-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.a-menu {
+    color: var(--color--dark-white);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.a-menu-cart {
+    color: var(--color--theme--main);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+li {
+    padding: 10px;
+}
+
+.li-menu {
+    text-transform: uppercase;
+}
+
+
+
+/**** HEADER *******/
+
+header {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    border-bottom: solid 5px var(--color--theme--main);
+}
+
+/******* MAIN *******/
+
+main {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: var(--color--white);
+    position: relative;
+    top: 150px;
+
+}
+
+/******< ALL PRODUCTS ******/
+
+h2 {
+    margin: 20 0 10 20;
+    padding: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color--x-dark-grey);
+
+}
+
+h3 {
+    text-transform: uppercase;
+    color: var(--color--lite-black);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+    color: var(--color--grey)
+}
+
+.underline-black-price {
+    text-decoration: line-through;
+    color: var(--color--black);
+}
+
+.red-price {
+    color: var(--color--theme--secondary);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.black-price {
+    font-size: 1.5em;
+    color: var(--color--black);
+    font-weight: bold;
+}
+
+.all-products-flex {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.single-product-img-article {
+    width: 50%;
+    padding: 15px;
+    display: flex;
+}
+
+.img-product {
+    width: 10vw;
+    height: auto;
+}
+
+
+.add-to-cart {
+    text-decoration: none;
+    background-color: var(--color--theme--main);
+    border-radius: 10%;
+    color: white;
+    padding: 8px;
+}
+
+.single-product {
+    width: 50%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.price-line {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/******* FOOTER ********/
+
+.footer {
+    margin: 0 auto;
+    width: 80vw;
+    padding-top: 200px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color--white);
+}
+
+.social-icons-footer {
+    width: 30%;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.links-footer {
+    margin: 50px;
+}
+
+.links-footer a {
+    font-size: 1.3em;
+    color: var(--color--black);
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.copyright {
+    margin: 50px;
+    color: var(--color--theme--main);
+    font-size: 1.3em;
+}
+
+
+.fab {
+    font-size: 1.8em;
+    padding: 15px;
+    background-color: var(--color--grey);
+    color: var(--color--dark-white);
+    border-radius: 50%;
+}
