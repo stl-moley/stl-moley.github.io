@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container {
+    text-align: center;
+}
+
+
+/* hero section */
+
+.hero-pro {
+    width: 70%;
+    margin-top: 5rem;
+    margin: 0 auto;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bil-pro{
+    width: 50%;
+}
+
+.bil-pro-img {
+    width: 50%;
+    float: right;
+}
+
+
+/* Section 1: BIL et l'hôpital */
+.bil-hopital {
+    padding: 3rem 0 3rem;
+}
+
+.bil-hopital p {
+    margin: 0 auto;
+    padding: 3rem 0 3rem;
+    width: 60%;
+}
+
+/* Section 2: fonctionnalités */
+
+
+.equipes {
+margin: 3rem 0 3rem;
+
+}
+
+
+.fonctions {
+    flex-direction: column;
+}
+
+.fonctions1 {
+    display: flex;
+}
+
+.fonctions2 {
+    display: flex;
+}
+
+.fab {
+    font-size: 5rem;
+    color: var(--main-color);
+    margin: 2rem;
+
+}
+
+
+/* SECTION 3 : Comment se procurer Bil? */
+
+.bil-hopital {
+
+    padding-bottom: 3rem;
+}
+.achatBil {
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.achatBil h3, h4 {
+    margin: 2rem 0 1rem 0;
+}
+
+
+.achatBil p {
+padding-bottom: 2rem;}
+
+.bil-hopital a {
+
+    margin-top: 6rem;
+}
+
+/* SECTION témoignages */
+
+.temoignages {
+    width: 100vw;
+    
+}
+
+.blocTemoignages  {
+width: 90%;
+margin: 0 auto;
+}
+
+.temoignages .fas {
+    font-size: 3rem;
+}
+
+
+/* SECTION 4: Avenir */
+
+.avenir-bil {
+    margin: 3rem 0 5rem;
+    text-align: center ;
+}
+
+.avenir-bil h3 {
+    margin: 3rem;
+}
+
+.avenir-bil p {
+    width: 60%;
+    margin: 0 auto ;
+    margin-bottom: 3rem;
+}
+
+/* SECTION 5: Prendre RDV */
+
+.contact-pro-footer {
+    height: auto;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+    margin: 4rem 0 4rem;
+    padding-top: 3rem;
+
+}
+
+.contact-text-btn {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 4rem;
+}
+
+.contact-pro-img {
+    width: 50%;
+}
+
+.bil-contact-pro {
+
+    width: 50%;
+    float: right;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width:1360px) {
+
+    .hero-pro {
+        margin-top: 6rem;
+}
+
+
+.bil-hopital p {
+   
+    width: 90%;
+    padding-bottom: 1;
+}
+
+.achatBil {
+    padding-top: 0;
+}
+
+.avenir-bil {
+    text-align: left;
+margin: 0 2rem 3rem 2rem;}
+
+.avenir-bil p {
+    width: 100%;
+}
+
+
+}
+
+@media all and (max-width:1028px){
+
+    .hero-pro {
+        width: 80%;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
+    .bil-pro {
+width: 70%;
+
+    }
+
+
+    .bil-pro-img {
+       display: none;
+    }
+
+    .bil-contact-pro {
+        float: initial;
+        margin-left: 2rem;
+    }
+
+    .contact-pro-footer {
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .contact-pro-img {
+margin-bottom: 2rem;
+    }
+
+    .contact-text-btn {
+        align-items: flex-start;
+        margin: 0;
+    }
+
+}

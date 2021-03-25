@@ -1,0 +1,490 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--main-color);
+    font-size: 2rem;
+
+}
+
+h4 {
+font-family: var(--kumbh);
+font-weight: normal;
+color: var(--main-color);
+font-size: 1.4rem;
+
+}
+
+p, li {
+   font-family: 'Montserrat', sans-serif;
+   line-height: 1.8rem;
+   color: var(--main-color);
+}
+
+
+/*NAVBAR */
+
+header {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+.toggle {
+  display: none;
+  font-size: 1.5rem;
+}
+
+nav {
+  background: #333A8F;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.lien_menu {
+  flex-grow: 1;
+}
+
+.logo {
+  height: 25px;
+  display: block;
+  margin-left: 25px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.menu li {
+  margin-left: 4rem;
+}
+
+.menu li a {
+  color: var(--jaune);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--kumbh);
+  font-weight: bold;
+}
+
+.tel-app {
+  background-color: var(--rouge);
+  padding: 1rem;
+  border-radius: 12px;
+
+}
+
+.ouvrir{
+
+  color: white;
+  font-size: 1rem;
+}
+
+.fermer {
+  color: white;
+  font-size: 1rem;
+}
+
+
+
+  .myButton {
+    background-color: #f4d387;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #333b8f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 16px 31px;
+    text-decoration: none;
+   
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 203px;
+
+}
+
+
+.blog a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.myButton:hover {
+    background-color: #bda42a;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+.hero {
+    
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bil { width: 300px;
+    margin-right: 50px;
+
+}
+
+.bilContent { width: 300px;
+margin-right: 50px;}
+
+.bilContent:hover  {
+  animation: wiggle 2.5s infinite;
+}   
+
+@keyframes wiggle {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  20% {
+      transform: rotate(0deg);
+  }
+
+  25% {
+      transform: rotate(5deg);
+  }
+
+  35% {
+      transform: rotate(-5deg);
+  }
+
+  40% {
+      transform: rotate(5deg);
+  }
+
+  45% {
+      transform: rotate(-5deg);
+  }
+
+  50% {
+      transform: rotate(0deg);
+  }
+
+  80% {
+      transform: rotate(0deg);
+  }
+
+  85% {
+      transform: rotate(5deg);
+  }
+
+  95% {
+      transform: rotate(-5deg);
+  }
+
+  100% {
+      transform: rotate(0deg);
+  }
+
+
+
+}
+
+
+.blog 
+{display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px;
+
+}
+
+.blogCase
+{ max-width: 400px;}
+
+
+.blog h3
+{display: flex;
+justify-content: center;
+align-items: center;}
+
+.blogTexte 
+{background-color: #83B4FF;
+margin: 10px;
+padding: 50px; 
+margin-bottom: 25px;}
+
+
+
+  .container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+    .question {display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 3rem auto;
+  }
+
+  .questionTexte { margin-bottom: 50px;}
+
+  input {
+
+    border:transparent;
+    border: solid 1px var(--main-color);
+    background-color: white;
+    color: var(--main-color);
+    width:100%;
+    padding:20px;
+    font-family: var(--montserrat);
+
+}
+
+
+
+
+.newsletter {
+margin: 5rem auto 3rem;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.newsletter img {margin-left: 50px;}
+
+.liens-img {
+  width: 30%;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--jaune);
+  font-family: var(--montserrat);
+}
+
+.logoFooter {
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.logoFooter img {
+  width: 70%;
+}
+
+
+.footerTexte {
+  display: flex;
+  width: 80%;
+}
+
+
+
+.footer-flex {
+  width: 30%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--jaune);
+  margin: 0.5rem;
+}
+
+.rs-flex {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.rs {
+  display: flex;
+}
+
+.titre-RS {
+  color: var(--jaune);
+  font-size: 1.2rem;
+}
+
+.rs i {
+  font-size: 2.2rem;
+  padding: 1rem;
+  color: var(--jaune);
+}
+
+
+.allRight {
+  width: 100%;
+  background-color: var(--main-color);
+  text-align: center;
+  color: var(--jaune);
+  padding: 1rem;
+}
+
+
+ 
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media all and (max-width:1360px) {
+
+
+  .container {
+      width: 90%;
+  }
+
+  .menu li {
+      margin-left: 2.6rem;
+  }
+
+  .hero {
+
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+
+  .be-in-link {
+      height: 150px;
+  }
+
+  .blog {
+    flex-direction: column;
+  }
+  
+  .blogCase {
+    width: 100%;
+    margin-bottom: 2rem;
+    max-width: 90%;
+  }
+
+}
+
+
+@media all and (max-width:1028px) {
+
+  .menu li {
+      margin-left: 1rem;
+  }
+
+  .container {
+      width: 100%;
+  }
+
+  
+  .footerTexte{
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .rs-flex {
+align-items: flex-end;    }
+
+.blog {
+  flex-direction: column;
+}
+
+.blogCase {
+  width: 100%;
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+}
+
+
+@media all and (max-width: 850px) {
+  .toggle {
+      display: block;
+      color: #fff;
+  }
+
+
+  nav {
+      width: 100%;
+      flex-wrap: wrap;
+  }
+
+  .menu {
+      width: 100%;
+      flex-direction: column-reverse;
+      display: none;
+  }
+
+  .open .menu {
+      display: flex;
+  }
+
+  .menu li {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+  }
+
+  .fermer {
+      display: none;
+  }
+
+  .ouvrir {
+      display: block;
+  }
+
+  .open .fermer {
+      display: block;
+  }
+
+  .open .ouvrir {
+      display: none;
+  }
+
+
+  .fonctions {
+      flex-wrap: wrap;
+  }
+
+  .container {
+      width: 100%;
+  }
+
+  .coucou {
+      display: none;
+  }
+
+  .fasFonctions {
+      font-size: 3rem;
+  }
+
+
+}

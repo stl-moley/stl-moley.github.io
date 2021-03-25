@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.hero-b2c {
+    margin: 0 auto;
+    width: 60%;
+display: flex;
+margin-top: 7rem;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.bil-bonjour-img {
+    width: 50%;
+}
+
+.bil-arms-up {
+    width: 50%;
+    padding: 2rem;
+}
+
+.bil-arms-up:hover  {
+    animation: wiggle 2.5s infinite;
+}   
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    35% {
+        transform: rotate(-5deg);
+    }
+
+    40% {
+        transform: rotate(5deg);
+    }
+
+    45% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(5deg);
+    }
+
+    95% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+
+
+}
+
+
+/* SECTION 1: Fonctionalités */
+
+.fonctions-bil {
+    margin: 4rem 0 4rem;
+    text-align: center;
+}
+
+.fonctions-bil-div {
+    margin: 3rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fonctions2-bil {
+    display: flex;
+}
+
+.fonctions2-bil div {
+    margin: 2rem;
+}
+
+.fonctions1-bil {
+    display: flex;
+}
+
+.fonctions1-bil div {
+    margin: 2rem;
+}
+
+/* SECTION 2: Né et fabriqué en France */
+
+.origines-bil {
+    margin: 3rem auto 3rem;
+    display: flex;
+}
+
+.origines-bil img {
+    width: 30%;
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.origines-texte {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.origines-texte h3 {
+    margin-bottom: 3rem;
+}
+
+
+/* SECTION 3: Image */
+
+
+
+/* SECTION 4: MOT POUR VOUS */
+
+.div-img-papa {
+
+    width: 20%;
+    padding: 2rem;
+}
+
+.papa {
+    display: flex;
+    align-items: center;
+}
+
+.img-papa {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+
+.mot-papa {
+    margin: 3rem;
+    width: 30%;
+}
+
+.mot-papa h4 {
+    margin-bottom: 3rem;
+}
+
+.idee {
+    margin: 3rem;
+    width: 40%;
+}
+
+.idee h3 {
+    margin-bottom: 3rem;
+}
+
+.idee p {
+    margin-bottom: 2.5rem;
+}
+
+/* SECTION TEMOIGNAGES */
+
+.img-bottom {
+    margin: 3rem auto;
+    width: 10%;
+}
+
+.blocTemoignages {
+    margin: 0 auto;
+    padding: 2rem;
+    width: 80%;
+    display: flex;
+}
+
+.blocTemoignages div {
+    margin: 2rem;
+}
+
+/* SECTION  AVENIR B2C */ 
+
+.avenir-bil {
+    margin: 3rem 0 5rem;
+    text-align: center ;
+}
+
+.avenir-bil h3 {
+    margin: 3rem;
+}
+
+.avenir-bil p {
+    width: 60%;
+    margin: 0 auto ;
+    margin-bottom: 3rem;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media all and (max-width:1600px) {
+    .hero-b2c {
+        width: 70%;
+    }
+    
+    .bil-bonjour-img {
+        width: 50%;
+    }
+    
+    .bil-arms-up {
+        width: 50%;
+        padding: 2rem;
+    }
+
+    .origines-bil {
+        margin-top: 5rem;
+    }
+
+    .origines-bil img {
+        width: 50%;
+    }
+
+    .papa {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem;
+    }
+
+    .div-img-papa {
+        width: 30%;
+    }
+
+    .mot-papa {
+        width: 55%;
+    }
+
+    .idee {
+        justify-content: center;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media all and (max-width:1300px){
+
+.origines-bil img {
+    width: 40%;
+}
+
+.origines-texte {
+    padding-right: 2rem;
+}
+
+.avenir-bil {
+    text-align: left;
+margin: 0 2rem 3rem 2rem;}
+
+.avenir-bil p {
+    width: 100%;
+}
+
+.img-bottom {
+    display: none;
+}
+}
+
+
+@media all and (max-width:1028px){
+.fonctions-bil-div {
+
+    margin: 3rem;
+}
+
+}
+
+@media all and (max-width: 900px){
+
+    .origines-bil {
+        flex-wrap: wrap;
+justify-content: center
+;    }
+
+.origines-bil img {
+    margin: 0;
+}
+
+
+.div-img-papa {
+    width: 45%;
+}
+
+.mot-papa {
+    width: 100%;
+}
+}

@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* font-family: 'Kumbh Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+
+/* Titres */
+
+h1,
+h2,
+h3 {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--main-color);
+    font-size: 2rem;
+
+}
+
+h4 {
+    font-family: var(--kumbh);
+    font-weight: normal;
+    color: var(--main-color);
+    font-size: 1.4rem;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8rem;
+
+}
+
+.fasFonctions {
+    font-size: 4rem;
+    color: var(--main-color);
+    margin: 2rem;
+}
+
+/*NAVBAR */
+
+header {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.toggle {
+    display: none;
+    font-size: 1.5rem;
+}
+
+nav {
+    background: #333A8F;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.lien_menu {
+    flex-grow: 1;
+}
+
+.logo {
+    height: 25px;
+    display: block;
+    margin-left: 25px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    margin-left: 4rem;
+}
+
+.menu li a {
+    color: var(--jaune);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--kumbh);
+    font-weight: bold;
+}
+
+.tel-app {
+    background-color: var(--rouge);
+    padding: 1rem;
+    border-radius: 12px;
+  
+}
+
+.ouvrir{
+
+    color: white;
+    font-size: 1rem;
+}
+
+.fermer {
+    color: white;
+    font-size: 1rem;
+}
+
+/* Section 1 : HERO SECTION */
+
+.hero {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8rem;
+    display: flex;
+}
+
+.texthero {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3rem;
+}
+
+.texthero p {
+    width: 70%;
+}
+
+.be-in-link {
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+.divBilCoucou {
+    width: 20%;
+}
+
+.coucou {
+    width: 100%;
+    float: left;
+}
+
+.coucou:hover  {
+    animation: wiggle 2.5s infinite;
+}   
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    35% {
+        transform: rotate(-5deg);
+    }
+
+    40% {
+        transform: rotate(5deg);
+    }
+
+    45% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(5deg);
+    }
+
+    95% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+
+
+}
+
+
+
+
+
+/* Section 2: B2C */
+
+
+
+.b2c {
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.fonctions {
+    padding: 2rem;
+    margin: 1rem auto 2rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.fonctions div {
+    margin: 1.5rem;
+}
+
+
+.fonctions p {
+
+    text-align: center;
+}
+
+
+/* Section 3: B2B */
+
+.b2b h3 {
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+.titres {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.b2b {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.imgB2b {
+    width: 30%;
+}
+
+.b2b img {
+    width: 60%;
+    float: right;
+}
+
+.divb2bImgTexte {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.b2bTexteBtn {
+    width: 60%;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+/* Témoignages */
+
+.tem-flex h4 {
+    text-transform: uppercase;
+}
+
+.temoignages {
+    width: 100%;
+    margin: 3rem auto 3rem;
+    padding: 3rem;
+    text-align: center;
+    background-color: #83B4FF;
+}
+
+.temoignages h3 {
+    margin: 2rem auto 2rem;
+}
+
+.tem-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.tem-flex div {
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem;
+
+}
+
+.temoignages p {
+    padding: 0.2rem;
+    text-align: center;
+}
+
+
+
+.fa-user-tie {
+    font-size: 3rem;
+    margin: 1.5rem;
+    color: var(--rouge);
+}
+
+.fa-user-nurse {
+
+    font-size: 3rem;
+    margin: 1.5rem;
+    color: var(--rouge);
+}
+
+
+/* Application */
+
+
+
+
+.application {
+    padding: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.appTexteBtn {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.imgApp {
+    width: 30%;
+    margin-left: 2rem;
+    height: auto;
+}
+
+.imgApp img {
+    width: 60%;
+}
+
+.application p {
+    margin-top: 2rem;
+    width: 80%;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--jaune);
+    font-family: var(--montserrat);
+}
+
+.logoFooter {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.logoFooter img {
+    width: 70%;
+}
+
+
+.footerTexte {
+    display: flex;
+    width: 80%;
+}
+
+
+
+.footer-flex {
+    width: 30%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--jaune);
+    margin: 0.5rem;
+}
+
+.rs-flex {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.rs {
+    display: flex;
+}
+
+.titre-RS {
+    color: var(--jaune);
+    font-size: 1.2rem;
+
+}
+
+.rs i {
+    font-size: 2.2rem;
+    padding: 1rem;
+    color: var(--jaune);
+}
+
+
+
+.allRight {
+    width: 100%;
+    background-color: var(--main-color);
+    text-align: center;
+    color: var(--jaune);
+    padding: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width:1600px) {
+
+
+    .temoignages {
+        margin: 2rem auto 2rem;
+        padding: 2rem;
+    }
+
+    .tem-flex {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media all and (max-width:1360px) {
+
+
+    .container {
+        width: 90%;
+    }
+
+    .menu li {
+        margin-left: 2.6rem;
+    }
+
+    .hero {
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .texthero {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .texthero p {
+        width: 100%;
+    }
+
+    .be-in-link {
+        height: 150px;
+    }
+
+    .fonctions {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .divb2bImgTexte {
+        flex-direction: column-reverse;
+
+    }
+
+    .imgB2b {
+        display: none;
+    }
+
+    .b2bTexteBtn {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .tem-flex {
+        flex-direction: column;
+    }
+
+
+
+
+}
+
+
+@media all and (max-width:1028px) {
+
+    .menu li {
+        margin-left: 1rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .fasFonctions {
+        font-size: 3.2rem;
+    }
+
+    .application {
+        flex-direction: column;
+    }
+
+    .appTexteBtn {
+        width: 100%;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+
+    .imgApp {
+        margin-left: 5rem;
+    }
+
+    .footerTexte{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rs-flex {
+align-items: flex-end;    }
+}
+
+
+@media all and (max-width: 850px) {
+    .toggle {
+        display: block;
+        color: #fff;
+    }
+
+
+    nav {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column-reverse;
+        display: none;
+    }
+
+    .open .menu {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .fermer {
+        display: none;
+    }
+
+    .ouvrir {
+        display: block;
+    }
+
+    .open .fermer {
+        display: block;
+    }
+
+    .open .ouvrir {
+        display: none;
+    }
+
+
+    .fonctions {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .coucou {
+        display: none;
+    }
+
+    .fasFonctions {
+        font-size: 3rem;
+    }
+
+
+}

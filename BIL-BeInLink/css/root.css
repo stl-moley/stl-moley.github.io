@@ -1,0 +1,59 @@
+:root {
+    --main-color:#333a8f;
+    --jaune: #f4d387;
+    --rouge: #D32D47 ;
+    --menthe: #93F4E1 ; 
+    --bleu-clair: #83B4FF;
+
+    --kumbh: 'Kumbh Sans', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+
+
+
+/* BOUTONS */
+
+.myButton {
+    background-color: #f4d387;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #333b8f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 16px 31px;
+    text-decoration: none;
+    width: 220px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.myButton:hover {
+    background-color: #bda42a;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+button {
+    border: none;
+}
+
+
+/* LIENS */
+
+.liens:hover {
+
+    background-color: var(--rouge);
+    border-radius: 0.9rem;
+    padding: 0.8rem;
+     cursor: pointer;
+
+}
+  
+ 
