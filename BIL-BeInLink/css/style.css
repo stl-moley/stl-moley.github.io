@@ -654,3 +654,35 @@ align-items: flex-end;    }
 
 
 }
+
+@media all and (max-width: 375px) {
+    
+.b2bTexteBtn {
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.tem-flex div {
+    padding: 0.2rem;
+}
+
+.temoignages p {
+    padding: 0;
+}
+
+.footer {
+    flex-direction: column-reverse;
+}
+
+.footerTexte {
+    flex-direction: column;
+}
+
+.footer-flex {
+    width: 100%;
+}
+}
