@@ -120,6 +120,13 @@ nav {
 
 /* Section 1 : HERO SECTION */
 
+
+.h1none {
+
+display: none;
+}
+
+
 .hero {
     width: 80%;
     margin: 0 auto;
