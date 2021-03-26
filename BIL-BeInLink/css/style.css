@@ -104,7 +104,12 @@ nav {
     background-color: var(--rouge);
     padding: 1rem;
     border-radius: 12px;
+    color: var(--main-color);
   
+}
+
+.tel-app a {
+    color: var(--main-color);
 }
 
 .ouvrir{
