@@ -3,7 +3,7 @@
 .bg {
     height: auto;
     width: 100%;
-    background: url(./assets/img/macro-view-clock-mechanism.jpg) fixed;
+    background: url(../assets/img/macro-view-clock-mechanism.jpg) fixed;
     background-position: center;
     object-fit: contain;
 }
@@ -41,7 +41,7 @@
     text-align: center;
     font-size:5em;
     text-transform:uppercase;
-    background:url(./assets/img/macro-view-clock-mechanism.jpg);
+    background:url(../assets/img/macro-view-clock-mechanism.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: transparent;

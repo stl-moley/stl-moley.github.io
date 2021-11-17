@@ -12,6 +12,7 @@
         rel="stylesheet" />
     <!-- <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="./dist/style.css" />
 </head>
 
@@ -370,6 +371,18 @@
 
 
         </div>
+
+        <div id="fermePopUp" class="pop-up">
+            <i onclick="fermePopUp()" class="fas fa-times close"></i>
+             <h3>Revenir à la liste des projets</h3>
+             <button> <a href="https://stl-moley.github.io/index.html">Cliquez-ici !</a></button>
+         </div>
+        
+         <script>
+             function fermePopUp(){
+                 document.getElementById('fermePopUp').style.display = "none";
+             }
+         </script>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>

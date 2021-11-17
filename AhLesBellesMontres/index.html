@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ah les belles montres</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/index.css"/>
     <link rel="stylesheet" href="./assets/css/main.css"/>
 </head>
@@ -123,6 +124,18 @@
 
         </form>
     </section>
+
+ <div id="fermePopUp" class="pop-up">
+    <i onclick="fermePopUp()" class="fas fa-times close"></i>
+     <h3>Revenir à la liste des projets</h3>
+     <button> <a href="https://stl-moley.github.io/index.html">Cliquez-ici !</a></button>
+ </div>
+
+ <script>
+     function fermePopUp(){
+         document.getElementById('fermePopUp').style.display = "none";
+     }
+ </script>
 
 </body>
 
