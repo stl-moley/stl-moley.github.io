@@ -1,0 +1,715 @@
+
+$font1: 'Cabin',
+sans-serif;
+$font2: 'Antonio',
+sans-serif;
+$font3: 'Open Sans',
+sans-serif;
+
+
+$color1: rgba(255, 255, 255, 0.644);
+$color2: #00804d;
+$color3: #f7941e;
+$color4: #4b1330;
+
+@mixin margin($margin:1rem) {
+    margin: $margin;
+}
+
+@mixin h2 ($colorh2:$color2, $fontSize: 2rem, $font: $font2) {
+    color: ($colorh2);
+    font-size: ($fontSize);
+    font-family: ($font);
+    text-transform: uppercase;
+}
+
+@mixin h3 {
+    color: $color2;
+    font-size: 1.5rem;
+    font-family: $font2;
+}
+
+@mixin p {
+    margin-bottom: 2rem;
+    font-family: $font3;
+}
+
+@import "./Pages/quiSommesNous";
+@import "./Pages/contact";
+@import "./Pages/actualite";
+@import "./Pages/mobilisation-climat";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+
+nav {
+    background-color: white;
+    width: 100%;
+    font-family: $font1;
+    position: fixed;
+    top: 0%;
+    z-index: 2;
+    
+.logoTop {
+    display: none;
+    color: white;
+    font-family: $font2;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 1rem 0 0 1rem;
+}
+
+.toggle {
+    display: none;
+    float: right;
+}
+
+
+
+.ouvrir {
+
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.fermer {
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color2;
+    font-family: $font2;
+    font-size: 1.3rem;
+
+}
+
+.top {
+    background-color: $color2;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    width: auto;
+}
+
+.top a {
+    color: white;
+}
+
+}
+
+
+header {
+    background: url(/src/img/photo-groupe-strasbourg-heyritz.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color1;
+    padding: 1rem;
+}
+
+h1 {
+    color: $color2;
+    font-family: $font2;
+    margin: 1rem;
+    font-size: 3rem;
+
+}
+
+.header h2 {
+    @include h2;
+}
+
+.fa-asterisk {
+    color: $color4;
+    font-size: 2rem;
+    animation: spin .5s forwards;
+    animation-delay: .7s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+        font-size: 0;
+    }
+
+    100% {
+        transform: rotate(720deg);
+        opacity: 1s;
+        font-size: 2rem;
+    }
+}
+
+
+.separation {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+
+.separation div {
+    margin: 1rem;
+}
+
+.line {
+    width: 100%;
+    background-color: $color4;
+    height: 0.25rem;
+}
+
+button {
+    background-color: $color2;
+    border: none;
+    border-radius: .4rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.1rem;
+}
+
+// SECTION QUI SOMMES NOUS ? //
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1260px;
+}
+
+.quiSommesNous_flex {
+    display: flex;
+    align-items: center;
+    height: 70vh
+}
+
+.quiSommesNous_flex_right {
+    @include margin;
+    width: 40%;
+}
+
+.quiSommesNous_flex_right img {
+    width: 100%
+}
+
+.quiSommesNous_flex_left {
+    @include margin;
+    width: 60%;
+}
+
+.quiSommesNous_flex_left h2 {
+    @include margin;
+    @include h2;
+}
+
+.quiSommesNous_flex_left p {
+    @include p;
+
+}
+
+
+// SECTION ACTU
+
+.actu {
+    height: 80vh;
+    @include margin;
+}
+
+.actu h2 {
+    @include h2;
+    font-size: 3rem;
+    text-align: center;
+    @include margin;
+}
+
+.actu_flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.actu_flex div {
+    @include margin;
+    width: 30%;
+}
+
+.actu_flex img {
+    width: 90%;
+}
+
+
+.actu_flex h3 {
+    @include h3;
+    margin: 1rem 0;
+}
+
+.actu_flex p {
+    @include p;
+}
+
+
+
+.rainbow:hover {
+    background-image: linear-gradient(to right,
+            #E7484F,
+            #F68B1D,
+            #FCED00,
+            #009E4F,
+            #00AAC3,
+            #732982);
+    animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+.follow {
+    margin-top: 40px;
+}
+
+.follow a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+// SECTION IMAGE //
+
+.fullImage {
+    height: 30vh;
+    width: 100%;
+    background: url(/src/img/15-12-12_Champmars_Elsa-Palito.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+}
+
+
+// SECTION CARTE // 
+
+.carte {
+    display: flex;
+    @include margin(2rem);
+    align-items: center;
+
+}
+
+.carte h2 {
+    @include h2();
+    @include margin;
+}
+
+.texte-carte {
+    width: 40%;
+    @include margin(2rem);
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.texte-carte p {
+    @include p;
+}
+
+.carte-flex {
+    width: 60%;
+    padding: 2rem;
+    @include margin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+iframe {
+    @include margin (2rem);
+}
+
+// GALERIE// 
+
+.galerie {
+    text-align: center;
+}
+
+.galerie h2 {
+    @include h2($fontSize:3rem);
+    @include margin;
+}
+
+.galerie-inner {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-self: center;
+}
+
+.galerie-photos {
+    width: 100%;
+    height: 30vh;
+    align-self: stretch;
+
+}
+
+.galerie-inner img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+// SECTION SLOGAN // 
+.slogan {
+    @include margin(3rem);
+}
+
+.slogan h2 {
+    @include h2;
+    text-align: center;
+
+}
+
+
+// SECTION FOOTER //
+
+footer {
+
+    background-color: $color2;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+
+}
+
+
+.footer-flex {
+
+    padding: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div {
+    font-family: $font3;
+
+}
+
+footer h4 {
+    font-family: $font3;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.liens {
+    display: flex;
+    flex-direction: column;
+}
+
+.liens a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: $color4;
+}
+
+.fab {
+    font-size: 2rem;
+    margin: 2rem 2rem 0 0;
+}
+
+
+
+// RESPONSIVE // 
+
+
+@media all and (max-width: 1019px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .fab {
+        margin: 1rem 1rem 0 0;
+    }
+
+}
+
+@media all and (max-width: 922px) {
+   
+    .fullImage {
+        background-size: auto;
+    }
+    .carte {
+        margin: 0;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .slogan {
+        @include margin;
+    }
+
+
+
+}
+
+@media all and (max-width: 794px) {
+.header h2 {
+
+    text-transform: initial;
+}
+
+
+    .toggle {
+        display: block;
+    }
+
+
+    nav {
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: $color2;
+    }
+
+    .header {
+        height: 92vh;
+        position: relative;
+        top: 2rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        background-color: $color2;
+        margin: 0;
+    }
+
+    .open .menu {
+        display: flex;
+    }
+
+    .logoTop {
+        display:initial;
+    }
+
+    .menu li {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu a {
+        color: white;
+    }
+
+    .fermer {
+        display: none;
+        font-size: 2rem;
+    }
+
+    .ouvrir {
+        display: block;
+    }
+
+    .open .fermer {
+        display: block;
+    }
+
+    .open .ouvrir {
+        display: none;
+    }
+
+
+    .header h1,
+    h2 {
+        text-align: center;
+
+    }
+
+    .quiSommesNous_flex {
+        height: auto;
+        margin: 3rem 0;
+        flex-direction: column-reverse;
+    }
+
+    .quiSommesNous_flex_right {
+        width: 80%;
+    }
+
+    .quiSommesNous_flex_left {
+        width: 90%;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .actu_flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actu_flex div {
+        width: 90%;
+        text-align: center;
+        margin: 0;
+        margin: 2rem 0;
+    }
+
+    .actu_flex p {
+        text-align: justify;
+    }
+
+    .actu_flex img {
+        width: 70%;
+    }
+
+    .carte {
+        flex-direction: column;
+    }
+
+    .texte-carte {
+        width: 100%;
+        padding: 0 2rem;
+        margin: 0;
+    }
+
+    .carte-flex {
+        width: 100%;
+    }
+
+   
+
+    .slogan {
+        margin: 3rem;
+    }
+
+    .slogan h2 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        height: auto;
+        font-size: 1rem;
+        padding: 0;
+        margin-top: 3rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer div {
+        margin: 1.2rem 0 0 0;
+        text-align: center;
+    }
+
+    .fab {
+        margin: 1rem 0; 
+        padding: 0.1rem;
+    }
+
+    .footer-flex {
+        padding: 0;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .social {
+        margin-bottom: 0;
+    }
+}
+
+@media all and (max-width:376) {
+
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    .header h2 {
+        font-size: 0.8rem;
+    }
+
+    .quiSommesNous_flex {
+        margin: 0;
+    }
+
+    .quiSommesNous_flex_left {
+        text-align: justify;
+    }
+
+    .quiSommesNous_flex_right {
+        width: 100%;
+    }
+
+.actu_flex p {
+        text-align: justify;
+    }
+
+    .actu_flex div {
+        width: 100%;
+    }
+
+    
+
+    .footer-flex {
+        flex-direction: column;
+    }
+
+    
+
+}

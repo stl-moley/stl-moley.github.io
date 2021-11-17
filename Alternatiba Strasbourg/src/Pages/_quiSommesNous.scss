@@ -1,0 +1,135 @@
+
+
+.hero-qui {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 4rem;
+
+    h1 {
+      text-align: center;
+    }
+}
+
+
+.text-hero {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    width: 70%;
+
+    p {
+      margin-bottom: 2rem;
+    }
+}
+
+.video {
+    display: flex;
+}
+
+.iframeVideo {
+    margin: 0 auto;
+}
+
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: $color4;
+  }
+   
+  .timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+  }
+
+  .timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background:$color2;
+    color: white;
+    font-family: $font1;
+  }
+   
+  .timeline ul li div::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  .timeline ul li:nth-child(odd) div {
+    left: 45px;
+  }
+   
+  .timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent $color2 transparent transparent;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -439px;
+  }
+   
+  .timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent $color2
+  }
+  
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: $color2;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.timeline {
+
+  margin-bottom: 8rem;
+
+  h2 {
+    text-align: center;
+    @include h2;
+    @include margin(3rem);
+  }
+
+}
