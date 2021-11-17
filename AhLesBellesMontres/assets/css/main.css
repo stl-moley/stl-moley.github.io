@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+/* font-family: 'Shippori Antique B1', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+/* VARIBIABLES */
+
+h1 {
+    --rouge: #e74c3c;
+}
+
+
+
+/* HEADER */ 
+
+.menu {
+    width: 100%;
+    height: 8vh;
+    background-color: #363A47;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+/* UTILS */
+
+
+
+.mon-bouton {
+
+    text-align:center;
+    padding: 10px;
+    margin:30px auto;
+    color:#FFFFFF;
+    width:30%;
+    border-radius:5px;
+    background:#e74c3c ;
+    box-shadow: 0 0 0 0 rgba(255, 71, 84, 0.7); 
+    animation:pulsation_bouton 2s ease-out infinite;
+    text-decoration:none;
+   
+}
+
+
+@keyframes pulsation_bouton {
+	
+from{
+	box-shadow:0 0 0 -3px hsla(0,0%,100%,0),0 0 0 0 rgba(255, 71, 84, 0.7)
+	
+	}
+to{
+	
+	box-shadow:0 0 0 10px hsla(0,0%,100%,0),0 0 0 13px hsla(0,0%,100%,0)}
+	
+	}
+
+
+/* FIN UTILS */
+
+/* FORMULAIRE */
+
+#formulaire {
+
+   
+    margin: auto;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-beetwenn;
+    align-items: center;
+    z-index: 1000;
+    background:  url(/assets/img/macro-view-clock-mechanism.jpg);
+    background-position:center;
+    
+}
+
+#formulaire h2 {
+
+    color: #e74c3C;
+    font-size:6vh;
+    writing-mode: vertical-rl;
+    margin:auto 20px;
+    transform: rotate(180deg); 
+    text-transform:uppercase;
+}
+
+#formulaire :nth-child(1) {
+
+
+    align-self: flex-start;
+}
+
+#formulaire :nth-child(2) {
+
+
+    align-self: center;
+    
+}
+
+form {
+
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;;
+    background-color: #e74c3c;
+    width: 40%;
+    padding: 1vh;
+    margin:auto;
+}
+
+::placeholder {
+
+    color:#fff;
+}
+
+input {
+
+    margin: 10px 0;
+    border:transparent;
+    border-bottom: solid 1px #fff;
+    background-color: #e74c3c;
+    color:#fff;
+    width:100%;
+    padding:20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+textarea {
+
+    margin: 10px;
+    border:transparent;
+    border-bottom: solid 1px #fff;
+    background-color: #e74c3c;
+    color:#fff;
+    width:100%;
+    padding:20px;
+    height:200px
+
+}
+
+input[type="submit"] {
+    border:1px solid #fff;
+    border-radius:5px;
+    width:50%;
+    padding:20px;
+    text-transform:uppercase;
+    font-weight: bold;
+
+}
+
+input[type="submit"]:hover {
+
+    background-color:#b14437 ;
+}

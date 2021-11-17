@@ -1,0 +1,60 @@
+@import url(/assets/css/main.css);
+
+h1{
+    font-size: 6rem;
+    color: var(--rouge);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2rem;
+}
+
+.bg-boutique {
+    width: 100%;
+    background-image: url(/assets/img/macro-view-clock-mechanism.jpg);
+    background-position: center;
+    padding: 3rem 0;
+}
+
+.produits-boutique {
+    background-color: white;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 1rem;
+}
+
+.img-produit-boutique {
+    width: 35%;
+    border : ghostwhite 4px solid;
+
+
+}
+
+.img-produit-boutique img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    background-color: ghostwhite;
+    padding: 1rem;
+}
+
+.d-flex h3 {
+    color: #e74c3c;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    align-items: center;
+}
