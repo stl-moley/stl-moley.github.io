@@ -47,6 +47,10 @@ h1 {
     font-size: 1.2rem;
 }
 
+.menu a:hover {
+color: #e74c3c;
+}
+
 /* UTILS */
 
 

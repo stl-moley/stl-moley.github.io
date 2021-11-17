@@ -1,0 +1,36 @@
+// MIXINS //
+
+@mixin button ($bgButton:$color3, $colorButton:$color1, $fontSizeButton: 1.1rem) {
+    background-color: ($bgButton);
+    color: ($colorButton);
+    font-size: ($fontSizeButton);
+    font-family: $font1;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    border: none;
+
+}
+
+@mixin margin ($margin:1rem) {
+    margin: $margin;
+}
+
+@mixin padding ($padding:1rem) {
+    padding: $padding;
+}
+
+@mixin h2 ($h2size:2rem, $h2color: $color2, $h2Family: $font1) {
+    font-size: $h2size;
+    color: $h2color;
+    font-family: $h2Family;
+    text-transform: uppercase;
+}
+
+
+@mixin p {
+    font-family: $font2;
+    color: $color1;
+    margin: 2rem 0;
+}
+    

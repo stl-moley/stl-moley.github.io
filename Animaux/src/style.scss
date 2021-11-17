@@ -1,0 +1,768 @@
+@import "./utils/utils";
+@import "./utils/mixin";
+@import "./base/base";
+
+
+// GENERALS //
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    @include button();
+}
+
+
+// HEADER //
+
+header {
+    background-color: $color1;
+    width: 100%;
+    top: 0%;
+    z-index: 4;
+}
+
+nav {
+    background-color: $color1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+
+}
+
+.toggle {
+    display: none;
+    float: right;
+}
+
+.ouvrir {
+
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.fermer {
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+    width: 90%;
+    font-family: $font2;
+}
+
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color3;
+    font-size: 1.1rem;
+}
+
+.fa-search {
+    font-size: 2rem;
+    color: $color3;
+}
+
+.fa-kiwi-bird {
+    color: $color3;
+    font-size: $fontSize2*1.5;
+}
+
+
+
+// HERO //
+
+
+.overlay {
+
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #01044060;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    background-color: $color5;
+    background-image: url(/src/img/pexels-brett-sayles-4857501.jpg);
+    background-position: center;
+    z-index: 3;
+
+}
+
+.textHero {
+    @include margin;
+    color: $color5;
+    width: 50%;
+    @include padding(2rem);
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: $font1;
+    // color: $color5;
+    margin: 1rem 0;
+}
+
+.textHero p {
+    font-size: 1.5rem;
+    font-family: $font2;
+    //color: $color4;
+    margin-bottom: 2rem;
+   // padding: 2rem 0;
+}
+
+// SECTION COMMENT AGIR //
+
+.agir {
+    @include margin;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+
+    h2 {
+        @include h2(2rem, $color1, $font2);
+        @include margin(1rem);
+    }
+
+
+}
+
+
+.agir-flex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    div {
+        @include margin(1.5rem);
+        @include padding();
+        width: 30%;
+
+        p {
+            @include p;
+            text-align: justify;
+        }
+
+        i {
+            font-size: $fontSize2*1.5;
+            color: $color4;
+        }
+
+        h3 {
+            font-size: $fontSize2/1.2;
+            color: $color4;
+            @include margin(2rem);
+        }
+
+    }
+
+
+}
+
+
+.agir button {
+    text-align: center;
+}
+
+// SECTION: FULL IMAGE //
+
+.fullImage {
+    width: 100%;
+    height: 50vh;
+    background-image: url(/src/img/chien-labrador-orange.jpg);
+    background-position: center;
+    margin: 2rem 0;
+}
+
+
+// SECTION LE REFUGE //
+
+.leRefuge {
+    @include margin();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+
+    img {
+        width: 70%;
+        overflow: hidden;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50%;
+        border-radius: 100px;
+        height: auto;
+    }
+}
+
+.imgRefuge {
+    width: 50%;
+    @include padding();
+    text-align: center;
+
+}
+
+
+
+.textRefuge {
+    width: 50%;
+    margin-left: 2rem;
+
+    h3 {
+        @include h2;
+    }
+
+    p {
+        font-family: $font2;
+        color: $color1;
+        margin: 2rem 0;
+    }
+}
+
+.border {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: groove 4px $color1;
+}
+
+// SECTION ANIMAUX // 
+
+
+.animaux {
+    @include margin();
+    display: flex;
+    align-items: center;
+    height: 60vh;
+
+}
+
+.textAnimaux {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    h3 {
+        @include h2;
+    }
+
+    p {
+        font-family: $font2;
+        color: $color1;
+        margin: 2rem 0;
+        text-align: end;
+    }
+
+}
+
+.imgAnimaux {
+    width: 50%;
+    @include padding();
+    text-align: center;
+
+
+    img {
+        width: 70%;
+        overflow: hidden;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50%;
+        border-radius: 100px;
+        height: auto;
+    }
+
+}
+
+// SLIDER ALL ANIMAUX //
+
+.splide__slide { 
+
+div {
+    width: 100%;
+    height: 350px;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+
+    }
+}
+
+}
+
+
+
+
+.allAnimaux {
+    width: 100%;
+    background: $color3;
+    padding: 2rem 0 4rem 0;
+
+    h2 {
+        text-align: center;
+        @include h2(2rem, $color1, $font2);
+        @include margin(1.8rem);
+    }
+}
+
+
+.grid {
+    width: 100%;
+    background-color: $color4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    display: none;
+
+    div {
+        width: 100%;
+        height: 30vh;
+        align-self: stretch;
+
+        img {
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+
+}
+
+.slide {
+
+    margin: 0 auto;
+    width: 30%;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+#slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#precedent,
+#suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    font-size: 100px;
+    color: $color3;
+    background-color: $color1;
+    padding: 10px;
+}
+
+#precedent {
+    left: 0;
+}
+
+#suivant {
+    right: 0;
+}
+
+.slider:hover #precedent,
+.slider:hover #suivant {
+    opacity: 1;
+}
+
+.slide {
+    display: flex;
+}
+
+// SECTION ACTUALITE //
+
+.actu {
+
+    @include margin;
+
+    h2 {
+        @include h2(2rem, $color1, $font2);
+        text-align: center;
+        @include margin(3rem);
+    }
+}
+
+.actu-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    div {
+        width: 25%;
+        @include margin(2rem);
+        text-align: center;
+    }
+
+    h3 {
+        @include h2(fontSize2/2);
+    }
+
+    p {
+        font-family: $font2;
+        color: $color1;
+        margin: 2rem 0;
+    }
+}
+
+// FOOTER // 
+
+footer {
+    background-color: $color1;
+    display: flex;
+    justify-content: space-around;
+    color: $color3;
+    font-family: $font2;
+    @include padding(2rem);
+
+    a {
+        color: $color3;
+        text-decoration: none;
+    }
+}
+
+.liensMentions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.socials {
+
+    div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    i {
+        font-size: $fontSize2;
+        margin: 1rem 1rem 0 0;
+    }
+}
+
+
+// MEDIA QUERIES //
+
+
+ @media all and(max-width:1860){
+   
+   
+    .splide__slide { 
+
+        div {
+            width: 100%;
+            height: 300px;
+        }
+        
+        }
+        
+
+} 
+
+@media all and(max-width:1024px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .hero {
+        height: 70vh;
+        background-position: initial;
+    }
+
+    .textHero {
+        width: 80%;
+    }
+
+    .agir {
+        height: auto;
+
+        .agir-flex div {
+            width: 44%;
+
+        }
+    }
+
+
+    .fullImage {
+        height: 30vh;
+    }
+
+    .leRefuge {
+        height: 40vh;
+    }
+
+    .animaux {
+
+        height: 40vh;
+    }
+
+    .slide {
+        width: 80%;
+    }
+
+   /* .splide {
+        display: none;
+    } 
+    .grid {
+        display: inline;
+    }
+*/
+
+
+    .actu-flex {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .actu-flex div {
+
+        width: auto;
+
+    }
+
+}
+
+@media all and(max-width: 800px) {
+    .toggle {
+        display: block;
+
+        i {
+            color: $color3;
+
+        }
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        background-color: $color1;
+        margin: 0;
+
+        .fa-search {
+            display: none;
+        }
+    }
+
+    .open .menu {
+        display: flex;
+    }
+
+    .logoTop {
+        display: initial;
+    }
+
+    .menu li {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu a {
+        color: $color3;
+    }
+
+    .fermer {
+        display: none;
+        font-size: 2rem;
+    }
+
+    .ouvrir {
+        display: block;
+    }
+
+    .open .fermer {
+        display: block;
+    }
+
+    .open .ouvrir {
+        display: none;
+    }
+
+
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hero {
+        background-color: $color3;
+        background-image: none;
+
+    }
+
+    .overlay {
+        background-color: $color2;
+
+    }
+
+    .agir {
+
+        .agir-flex div {
+            width: 80%;
+
+        }
+    }
+
+    .leRefuge {
+        flex-direction: column-reverse;
+        height: 60vh;
+
+        .textRefuge {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .imgRefuge {
+            display: none;
+        }
+    }
+
+    .border {
+        display: none;
+    }
+
+    .animaux {
+        height: 60vh;
+    }
+
+    .actu h2 {
+        margin: 3rem 0 0 0;
+    }
+    .actu-flex {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 380px){
+
+.hero {
+    height: auto;
+
+    .text-hero {
+width: 100%;
+
+    }
+
+}
+
+.leRefuge {
+    height: auto;
+}
+
+.animaux {
+    flex-direction: column-reverse;
+    height: auto;
+
+    .textAnimaux {
+        width: 100%;
+        align-items: center;
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    .imgAnimaux {
+        width: 100%;
+    }
+}
+
+.slide {
+    width: 100%
+}
+
+#precedent, #suivant {
+    font-size: 20px;
+}
+
+.actu {
+.actu-flex div {
+    width: 100%;
+    margin: 0;
+
+    h3 {
+        margin-top: 2rem;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
+}
+
+footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        margin: 1.5rem;
+        text-align: center;
+
+        .socials {
+            text-align: center;
+        }
+    }
+}
+
+}
+    
