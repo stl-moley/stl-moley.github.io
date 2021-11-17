@@ -14,18 +14,16 @@
 
     <header>
         <nav>
-            <div class="logo"><img src="/img/Logo-Estelle-FINAL-blanc.png" alt="Logo EM"></div>
+            <div class="logo"><img src="./img/Logo-Estelle-FINAL-blanc.png" alt="Logo EM"></div>
             <div class="toggle">
                 <i class="fas fa-bars ouvrir"></i>
                 <i class="fas fa-times fermer"></i>
             </div>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-                <li> <button class="btn">Inscription</button> </li>
-                <li> <button class="btn btn-secondary">Connexion</button></li>
+                <li><a href="#projets-web">Projets Web</a></li>
+                <li><a href="#projets-graph">Projets Graphisme</a></li>
+                <li><a href="#formulaire">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -36,15 +34,15 @@
 
     </section>
 
-<h2 class="titre-projets">Mes projets Web design</h2>
+<h2 id="projets-web" class="titre-projets">Mes projets Web design</h2>
 
     <section class="slider">
-        <img src="/img/site-BIL.png" alt="Site BIL" class="img__slider active">
-        <img src="/img/site-anv.png" alt="Site ANV" class="img__slider">
-        <img src="/img/site-alternatiba.png" alt="Site Alternatiba" class="img__slider">
-        <img src="/img/Mockup-camps-climat.png" alt="Site Camps Climat" class="img__slider">
-        <img src="/img/site-praticiens.png" alt="Site Praticiens Cerule" class="img__slider">
-        <img src="/img/site-estelle-moley.png" alt="Site Estelle Moley" class="img__slider">
+        <img src="./img/site-BIL.png" alt="Site BIL" class="img__slider active">
+        <img src="./img/site-anv.png" alt="Site ANV" class="img__slider">
+        <img src="./img/site-alternatiba.png" alt="Site Alternatiba" class="img__slider">
+        <img src="./img/Mockup-camps-climat.png" alt="Site Camps Climat" class="img__slider">
+        <img src="./img/site-praticiens.png" alt="Site Praticiens Cerule" class="img__slider">
+        <img src="./img/site-estelle-moley.png" alt="Site Estelle Moley" class="img__slider">
         <div class="suivant">
             <i class="fas fa-chevron-circle-right"></i>
         </div>
@@ -54,21 +52,21 @@
   
     </section>
 
-<h2 class="titre-projets">Mes projets en graphisme</h2>
+<h2 id="projets-graph" class="titre-projets">Mes projets en graphisme</h2>
 
 
     <section class="slider_deux">
-        <img src="/img/alternatiba-mockup-facebook-gris.png" alt="Alternatiba facebook" class="img__slider_deux active_deux">
-        <img src="/img/alternatiba-mockup-facebook-gris-d2.png" alt="Alternatiba facebook" class="img__slider_deux">
-        <img src="/img/anv-cop21-mockup-facebook-gris.png" alt="ANV Facebook" class="img__slider_deux">
-        <img src="/img/anv-cop21-mockup-facebook-gris-v2.png" alt="ANV Facebook" class="img__slider_deux">
-        <img src="/img/back-market-mockup-logo-long.png" alt="Back Market logo" class="img__slider_deux">
-        <img src="/img/back-market-mockup-logo.png" alt="Back Market logo" class="img__slider_deux">
-        <img src="/img/logo-mur-freedom-grey.png" alt="Logo Freedom Mur" class="img__slider_deux">
-        <img src="/img/mockup-logo-freedom-homme-t-shirt.png" alt="T shirt Logo homme" class="img__slider_deux">
-        <img src="/img/Mockup-skate-freedom-logo.png" alt="Mockup Skate Freedom" class="img__slider_deux">
-        <img src="/img/web-mockup-freedom-grey.png" alt="Mockup web freedom" class="img__slider_deux">
-        <img src="/img/mockup-festival-exterieur.png" alt="Festival Warmup" class="img__slider_deux">
+        <img src="./img/alternatiba-mockup-facebook-gris.png" alt="Alternatiba facebook" class="img__slider_deux active_deux">
+        <img src="./img/alternatiba-mockup-facebook-gris-d2.png" alt="Alternatiba facebook" class="img__slider_deux">
+        <img src="./img/anv-cop21-mockup-facebook-gris.png" alt="ANV Facebook" class="img__slider_deux">
+        <img src="./img/anv-cop21-mockup-facebook-gris-v2.png" alt="ANV Facebook" class="img__slider_deux">
+        <img src="./img/back-market-mockup-logo-long.png" alt="Back Market logo" class="img__slider_deux">
+        <img src="./img/back-market-mockup-logo.png" alt="Back Market logo" class="img__slider_deux">
+        <img src="./img/logo-mur-freedom-grey.png" alt="Logo Freedom Mur" class="img__slider_deux">
+        <img src="./img/mockup-logo-freedom-homme-t-shirt.png" alt="T shirt Logo homme" class="img__slider_deux">
+        <img src="./img/Mockup-skate-freedom-logo.png" alt="Mockup Skate Freedom" class="img__slider_deux">
+        <img src="./img/web-mockup-freedom-grey.png" alt="Mockup web freedom" class="img__slider_deux">
+        <img src="./img/mockup-festival-exterieur.png" alt="Festival Warmup" class="img__slider_deux">
         <div class="suivant_deux">
             <i class="fas fa-chevron-circle-right"></i>
         </div>
@@ -78,10 +76,34 @@
   
     </section>
 
+    <section id="formulaire">
+
+        <h2>Formulaire de contact</h2>
+
+        <form method="post" action="envoi.php" id="#" name="#">
+
+            <label for="fname"></label>
+            <input type="text" id="nom" name="nom" placeholder="Vos noms et prénoms">
+
+            <label for="sujet"></label>
+            <input type="text" id="sujet" name="sujet" placeholder="l'objet de votre message">
+
+            <label for="emailAddress"></label>
+            <input type="email" id="email" name="email" placeholder="Votre e-mail">
+
+            <label for="subject"></label>
+            <textarea name="message" id="message" placeholder="Votre Message"></textarea>
+
+            <input type="submit" value="Envoyer">
+
+
+        </form>
+    </section>
+
 
     <footer></footer>
 
-    <script src="/app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

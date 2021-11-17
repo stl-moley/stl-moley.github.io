@@ -38,7 +38,7 @@ nav {
 }
 
 .menu {
-    width: 550px;
+    width: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +83,7 @@ nav {
 .hero {
     width: 100%;
     height: 90vh;
-    background-image: url(/img/pexels-anni-roenkae-2317710.jpg);
+    background-image: url(./img/pexels-anni-roenkae-2317710.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -194,6 +194,101 @@ h1 {
 
 .precedent_deux {
     left: 10rem;
+}
+
+/* formulaire */
+
+#formulaire {
+    margin: 4rem auto;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+#formulaire h2 {
+
+    color: #A12A0E;
+    font-size:6vh;
+    margin:auto 20px;
+    text-transform:uppercase;
+    margin: 2rem auto;
+    border-bottom: 2px solid #A12A0E;
+}
+
+#formulaire :nth-child(1) {
+
+
+    align-self: flex-start;
+}
+
+#formulaire :nth-child(2) {
+
+
+    align-self: center;
+    
+}
+
+form {
+
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;;
+    background-color: #A12A0E;
+    width: 40%;
+    padding: 1vh;
+    margin:auto;
+}
+
+::placeholder {
+
+    color:#fff;
+}
+
+input {
+
+    margin: 10px 0;
+    border:transparent;
+    border-bottom: solid 1px #fff;
+    background-color: #A12A0E;
+    color:#fff;
+    width:100%;
+    padding:20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+textarea {
+
+    margin: 10px;
+    border:transparent;
+    border-bottom: solid 1px #fff;
+    background-color: #A12A0E;
+    color:#fff;
+    width:100%;
+    padding:20px;
+    height:200px
+
+}
+
+input[type="submit"] {
+    border:1px solid #fff;
+    border-radius:5px;
+    width:50%;
+    padding:20px;
+    text-transform:uppercase;
+    font-weight: bold;
+
+}
+
+input[type="submit"]:hover {
+
+    background-color:#A12A0E ;
 }
 
 /* FOOTER */ 
