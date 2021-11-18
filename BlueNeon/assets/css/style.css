@@ -477,6 +477,11 @@ background-color: transparent;
 font-size: 1.6rem;
 }
 
+button:hover {
+    background-color:#5E4400;
+    cursor: url("../img/glowing_cursor.png"), pointer;
+    }
+
 /* FOOTER */
 
 footer {
