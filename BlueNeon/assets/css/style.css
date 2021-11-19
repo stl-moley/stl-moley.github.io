@@ -783,7 +783,13 @@ color: white;
      table {
          margin: 1rem;
          padding: 0.1rem;
+         width: 90%;
      }
+
+     td, th {
+        padding: 3px 3px;
+     }
+
 
      button {
          font-size: 1.3rem;
