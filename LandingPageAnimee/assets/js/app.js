@@ -1,7 +1,7 @@
 let t1 = gsap.timeline();
 
 t1.from('.letter1', {
-duration: 1,
+duration: 2.5,
 opacity: 0,
 stagger: 0.25,
 color: '#A12A0E'
