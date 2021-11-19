@@ -64,6 +64,14 @@ t1.to('.letter7', {
     y: 150
 })
 
+t1.to('.letter8', {
+    duration: 0.5,
+    delay: -0.6,
+    fontSize: '16rem',
+    x: 280,
+    y: 150
+})
+
 t1.from('header', {
     duration: 0.8,
     opacity: 0,
@@ -86,3 +94,24 @@ t1.from('.lines', {
     duration: 1,
     opacity: 0,
 }, "<0.5")
+
+
+function emVisible(){
+    if (x.matches){
+        t1.to('.letter1', {
+            x: 0,
+            y: 0
+            })
+
+            t1.from('.letter8', {
+            fontSize: '16rem',
+            x: 0,
+            y: 0
+            })
+    } 
+}
+
+var x = window.matchMedia("(max-width:600px)")
+
+emVisible(x)
+

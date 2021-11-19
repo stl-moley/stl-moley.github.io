@@ -111,6 +111,11 @@ nav a {
     left: 50%;
 }
 
+.letter8 {
+    display: none;
+}
+
+
 .triangle {
     width: 0;
     height: 0;
@@ -210,4 +215,21 @@ nav a {
         bottom: 5%;
         left: 10%;
     }
+
+    .letter1 {
+        left: 0;
+        top: 0;
+        transform: translate(0px)
+    }
+
+    .letter8 {
+        display: block;
+        font-size: 16rem;
+    }
+
+    .letter2, .letter3, .letter4, .letter5, .letter6, .letter7 {
+        display: none;
+    }
+
+
 }
