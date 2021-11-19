@@ -759,6 +759,48 @@ color: white;
      .hero h1 {
          font-size: 3rem;
      }
+
+     .skills {
+         padding: 1rem;
+     }
+
+     .skills h2 {
+         margin-top: 2rem;
+     }
+
+     .skills-flex {
+         padding: 1rem;
+     }
+
+     .inside-skills {
+         width: 100%;
+         margin: 0;
+     }
+
+     .prices {
+         padding: 1rem 0;
+     }
+
+
+     table {
+         margin: 1rem;
+         padding: 0.1rem;
+     }
+
+     button {
+         font-size: 1.3rem;
+     }
+
+     footer {
+         flex-direction: column-reverse;
+         
+     }
+
+     .div-footer-flex {
+         width: 100%;
+         align-items: center;
+         margin-top: 2rem;
+     }
     }
 
     /* POP UP */
