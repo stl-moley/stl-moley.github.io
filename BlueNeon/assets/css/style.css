@@ -16,6 +16,8 @@ body {
     font-family: 'Overpass', sans-serif;
     background-color: #020612;
     color: #020612;
+    cursor: url("./BlueNeon/assets/img/glowing_cursor.png"), pointer;
+
 }
 
 p{

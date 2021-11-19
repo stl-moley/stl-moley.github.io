@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,14 +19,14 @@ header {
 }
 
 span {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #A12A0E;
 }
 
 h1 {
     color: #18543F;
     margin: 2rem;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
 }
 
