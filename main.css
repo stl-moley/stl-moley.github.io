@@ -10,7 +10,6 @@ body {
 
 header {
     width: 100%;
-    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -19,19 +18,23 @@ header {
 }
 
 span {
-    font-size: 3.5rem;
+    margin-top: 2rem;
+    font-size: 4rem;
     color: #A12A0E;
+    border: #A12A0E 3px solid;
+    padding: 1rem;
 }
 
 h1 {
     color: #18543F;
-    margin: 2rem;
     font-size: 3rem;
     text-align: center;
+    
 }
 
 ul {
     text-align: center;
+    padding: 1rem;
 }
 
 li {
@@ -54,4 +57,28 @@ li a:hover {
 }
 
 
+@media screen and (max-width: 600px){
 
+
+    span {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        font-size: 0.8rem;
+    }
+
+    li a {
+        font-size: 1rem;
+    }
+
+    li a:hover {
+        color: #A12A0E;
+        font-size: 2rem;
+    }
+}
+    
