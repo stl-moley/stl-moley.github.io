@@ -192,6 +192,10 @@ nav a {
         height: 100vh;
     }
 
+    .slogan__inner {
+        font-size: 5rem;
+    }
+
 
     .letter4 {
         position: relative;
