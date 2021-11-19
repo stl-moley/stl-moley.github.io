@@ -27,6 +27,7 @@
 body {
     font-size: 15px;
     background-color: var(--color1);
+    padding: 0;
 }
 
 .lines {
@@ -193,9 +194,10 @@ nav a {
 
     .hero {
         width: 100%;
-        left: 0;
-        right: 0;
         height: 100vh;
+        margin: 0;
+        padding: 0;
+        left: 0;
     }
 
     .slogan__inner {
