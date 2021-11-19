@@ -104,7 +104,8 @@ function emVisible(){
             })
 
             t1.from('.letter8', {
-            fontSize: '16rem',
+            duration: 0.5,
+            delay: 0.2,
             x: 0,
             y: 0
             })
