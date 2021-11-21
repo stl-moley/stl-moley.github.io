@@ -18,7 +18,7 @@ header {
 }
 
 span {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-size: 4rem;
     color: #A12A0E;
     border: #A12A0E 3px solid;
@@ -27,8 +27,14 @@ span {
 
 h1 {
     color: #18543F;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
+    
+}
+
+h2, h3 {
+    color: #18543F;
+    font-size: 1rem;
     
 }
 
@@ -46,16 +52,51 @@ li {
 
 li a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #18543F;
 
 }
 
 li a:hover {
     color: #A12A0E;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
+
+footer {
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-pres {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    border-bottom: #18543F 2px solid;
+}
+
+.photo {
+    width: 100px;
+    margin-right: 2rem;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.logo img {
+    width: 100%;
+}
 
 @media screen and (max-width: 600px){
 
