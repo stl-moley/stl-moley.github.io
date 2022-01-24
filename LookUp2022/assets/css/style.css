@@ -169,9 +169,9 @@ h2 {
 
 
 span {
-    text-transform: uppercase;
     font-weight: bold;
-    text-decoration: underline;
+    border-bottom: solid 2px white;
+    padding-bottom: 3px;
 }
 
 /* LINES */
