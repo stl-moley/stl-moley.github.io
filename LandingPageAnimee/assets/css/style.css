@@ -185,7 +185,7 @@ nav a {
     header {
         z-index: 100;
         height: 12vh;
-        background-color: #18543F;
+        background-color: #acccc1;
     }
 
     .header__logo {

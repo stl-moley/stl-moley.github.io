@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --font1: 'Abril Fatface', cursive;
+    --font2: 'Raleway', sans-serif;
+
+    --color1: rgb(17, 17, 17);
+    --color2: rgb(18, 18, 66);
+    --color3: #ffee00;
+    --color4: white;
+
+}
+
+
+body {
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: var(--color1);
+}
+
+p {
+    font-family: var(--font2);
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--color2);
+    color: white;
+    padding: 0 2rem;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 15%;
+}
+
+.toggle {
+    display: none;
+}
+
+.menu {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.menu button:hover {
+    font-size: 1.5rem;
+    background-color: #A12A0E;
+
+}
+
+.menu a:hover {
+    color: #A12A0E;
+    font-weight: 800;
+}
+
+/* SECTION : HERO */
+
+h1 {
+    font-family: var(--font1);
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: var(--color4);
+    padding-bottom: 10px;
+    border-bottom: 10px solid var(--color3);
+    line-height: 90px;
+    text-align: end;
+}
+
+h2 {
+    color: var(--color4);
+    font-family: var(--font1);
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: end;
+}
+
+.date {
+    font-size: 4rem;
+    font-family: var(--font1);
+}
+
+.hero {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.hero-texte {
+    width: 60%;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-img {
+    width: 40%;
+    height: 100%;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SECTION INTRO */
+
+
+.intro {
+    width: 80%;
+    margin: 5rem auto;
+}
+
+/*     background-image: url(/assets/img/haitham-PY2lJbqsJzU-unsplash.jpg);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 0%; */
+
+
+.intro-texte {
+    margin: 0 auto;
+    /*  border: 21px groove #593847;*/
+}
+
+.inner-intro-texte {
+
+    background-color: var(--color2);
+    text-align: center;
+    padding: 1.2rem;
+}
+
+
+.intro-texte p,
+.intro-texte li {
+    margin: 1rem;
+    color: var(--color4);
+    font-size: 1.2rem;
+    list-style: none;
+    line-height: 30px;
+
+}
+
+.appel {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color4);
+    padding: 2rem;
+    line-height: 60px;
+}
+
+
+span {
+    color: var(--color3);
+    font-weight: bold;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.intro-img {
+    width: 100%;
+    margin: 5rem 0;
+}
+
+.intro-img img {
+    width: 100%;
+}
+
+
+/* LINES */
+
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 90vw;
+}
+
+.line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+    animation: drop 7s 0s infinite;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.line:nth-child(1) {
+    margin-left: -25%;
+}
+
+.line:nth-child(1)::after {
+    animation-delay: 2s;
+}
+
+.line:nth-child(3) {
+    margin-left: 25%;
+}
+
+.line:nth-child(3)::after {
+    animation-delay: 2.5s;
+}
+
+@keyframes drop {
+    0% {
+        top: 110%;
+    }
+
+    100% {
+        top: -50%;
+    }
+}
+
+
+
+/* SECTION : Formulaire */
+
+.formulaire {
+    /* background-color: var(--color2);*/
+    font-family: var(--font1) !important;
+
+}
+
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social {
+    list-style: none;
+    display: flex;
+}
+
+
+.social a {
+    color: var(--color4);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+
+/* Media Queries */
+
+@media all and (max-width: 991px) {
+    .toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+
+    header {
+        background-color: transparent;
+    }
+
+    .logo {
+        position: relative;
+        z-index: 20;
+    }
+
+    .ouvrir {
+        display: block;
+    }
+
+    .fermer {
+        display: none;
+    }
+
+    .open .ouvrir {
+        display: none;
+    }
+
+    .open .fermer {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #A12A0E;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+
+    .open .menu {
+        transform: translateX(0);
+    }
+
+    .menu a {
+        font-size: 2rem;
+    }
+
+
+    .hero {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .hero-texte {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .hero-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+        margin: 0;
+        padding: 1rem;
+        height: 60%;
+        object-position: center;
+        opacity: 0.4;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    .appel {
+        line-height: 40px;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .intro {
+        text-align: center;
+        padding: 4rem 1rem;
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width: 650px) { 
+
+.hero-img {
+    display: none;
+}
+
+.hero {
+    height: 60vh;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+    padding-bottom: 2px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+
+.intro p {
+    font-size: 1.1rem;
+}
+
+
+}
